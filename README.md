@@ -31,9 +31,8 @@ available for your local user.
 pipx install catalystcloud-client --include-deps
 ```
 
-> [!NOTE]
-> The `--include-deps` option is required to expose the `openstack` command
-> used to interact with Catalyst Cloud.
+Note that the `--include-deps` option is required to expose the
+`openstack` command used to interact with Catalyst Cloud.
 
 ### pip
 
@@ -48,12 +47,11 @@ python -m pip install catalystcloud-client
 This exposes the `openstack` command used to interact with Catalyst Cloud
 in the running Python environment.
 
-> [!WARNING]
-> When installing using `pip` it is highly recommended to install the API client
-> into a virtual environment.
->
-> This ensures that there are no conflicts with packages installed into the
-> Python environment managed by your operating system.
+When installing using `pip` it is highly recommended to install the API client
+into a virtual environment.
+
+This ensures that there are no conflicts with packages installed into the
+Python environment managed by your operating system.
 
 ## Usage
 
