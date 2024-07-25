@@ -42,7 +42,7 @@ Python environment managed by your operating system.
 ### pipx
 
 For installing the Catalyst Cloud API client on a desktop machine for interactive use,
-an alternative installation method which may be easier to use is to use [`pipx`](https://pipx.pypa.io).
+an alternative installation method which may be easier is to use [`pipx`](https://pipx.pypa.io).
 
 ```bash
 pipx install catalystcloud-client --include-deps
