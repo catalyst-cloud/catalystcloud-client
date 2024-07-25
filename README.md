@@ -18,39 +18,49 @@ this package; for more information refer to [Available Commands](#available-comm
 ## Installation
 
 The Catalyst Cloud API client supports Python 3.8 and later,
-and is supported for Linux, macOS and Windows clients.
-
-### pipx
-
-The recommended installation method is to use [`pipx`](https://pipx.pypa.io).
-This installs the [`catalystcloud-client`](https://pypi.org/project/catalystcloud-client)
-package into an isolated virtual environment, while also making the installed commands
-available for your local user.
-
-```bash
-pipx install catalystcloud-client --include-deps
-```
-
-Note that the `--include-deps` option is required to expose the
-`openstack` command used to interact with Catalyst Cloud.
+and supports most systems running on Linux, macOS and Windows.
 
 ### pip
 
-The Catalyst Cloud API client can also be installed directly using `pip`.
-This is useful when installing the package in a container image build,
-for example.
+The Catalyst Cloud API client can be installed directly using `pip`.
 
 ```bash
 python -m pip install catalystcloud-client
 ```
 
-This exposes the `openstack` command used to interact with Catalyst Cloud
+This exposes the commands used to interact with Catalyst Cloud
 in the running Python environment.
+
+This is the recommended method of installing the package in a container image build,
+for example.
 
 When installing using `pip` it is highly recommended to install the API client
 into a virtual environment.
 This ensures that there are no conflicts with packages installed into the
 Python environment managed by your operating system.
+
+### pipx
+
+For installing the Catalyst Cloud API client on a desktop machine for interactive use,
+an alternative installation method which may be easier to use is to use [`pipx`](https://pipx.pypa.io).
+
+```bash
+pipx install catalystcloud-client --include-deps
+```
+
+This installs the [`catalystcloud-client`](https://pypi.org/project/catalystcloud-client)
+package into an isolated virtual environment, while also making the installed commands
+available for your local user.
+
+Note that the `--include-deps` option is required to expose the commands
+used to interact with Catalyst Cloud so they can be executed by your user.
+
+`pipx` also makes it easy to update the client and dependent packages
+using `pipx upgrade`.
+
+```bash
+pipx upgrade catalystcloud-client
+```
 
 ## Usage
 
