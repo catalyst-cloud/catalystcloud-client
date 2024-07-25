@@ -64,9 +64,11 @@ in the Catalyst Cloud documentation.
 Installing the Catalyst Cloud API client makes the following commands available:
 
 * `openstack` - The OpenStack API client. Used for most tasks via sub-commands.
+  Provided by the `python-openstackclient` package.
 * `swift` - The Swift API client. An alternative command for interacting with
   the [Catalyst Cloud Object Storage](https://docs.catalystcloud.nz/object-storage.html)
   service using the Swift API.
+  Provided by the `python-swiftclient` package.
 
 Using the `openstack` command, the following services can be managed:
 
