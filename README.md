@@ -49,7 +49,6 @@ in the running Python environment.
 
 When installing using `pip` it is highly recommended to install the API client
 into a virtual environment.
-
 This ensures that there are no conflicts with packages installed into the
 Python environment managed by your operating system.
 
