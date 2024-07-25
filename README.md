@@ -5,11 +5,11 @@
 This is a package for installing the API clients and all necessary
 plugins for interacting with [Catalyst Cloud](https://catalystcloud.nz).
 
-Catalyst Cloud is an [OpenStack](https://openstack.org)-based public cloud,
-with data centres across New Zealand. We provide a range of different services
-for our customers, and have created this package to make it easier
-for customers to create a CLI environment from which they can interact
-with our cloud.
+Catalyst Cloud is an [OpenStack](https://openstack.org)-based public cloud
+based in New Zealand, with multiple regions available.
+We provide a range of different services for our customers, and have created
+this package to make it easier for customers to create a CLI environment
+from which they can interact with our cloud.
 
 Note that this library is not required to interact with Catalyst Cloud APIs.
 The individual client libraries can be installed and used separately from
