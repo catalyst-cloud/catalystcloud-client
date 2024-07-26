@@ -31,8 +31,9 @@ python -m pip install catalystcloud-client
 This exposes the commands used to interact with Catalyst Cloud
 in the running Python environment.
 
-This is the recommended method of installing the package in a container image build,
-for example.
+Installing via `pip` is the recommended method for installing the package in
+a container image build, which can be used to, for example, create isolated
+command line environments or CI/CD pipelines using Catalyst Cloud.
 
 When installing using `pip` it is highly recommended to install the API client
 into a virtual environment.
