@@ -81,38 +81,39 @@ Installing the Catalyst Cloud API client makes the following commands available:
 
 Using the `openstack` command, the following services can be managed:
 
-| Service        | Resource Type           | Sub-command                        | API Client Library      |
-|----------------|-------------------------|------------------------------------|-------------------------|
-| Identity       | Projects                | `openstack project`                | `python-keystoneclient` |
-| Identity       | Users                   | `openstack user`                   | `python-keystoneclient` |
-| Identity       | EC2 Credentials         | `openstack ec2 credentials`        | `python-keystoneclient` |
-| Identity       | Application Credentials | `openstack application credential` | `python-keystoneclient` |
-| Compute        | Instances / Servers     | `openstack server`                 | `python-novaclient`     |
-| Compute        | Keypairs                | `openstack keypair`                | `python-novaclient`     |
-| Networking     | Networks                | `openstack network`                | `python-neutronclient`  |
-| Networking     | Routers                 | `openstack router`                 | `python-neutronclient`  |
-| Networking     | Floating IPs            | `openstack floating ip`            | `python-neutronclient`  |
-| Networking     | Security Groups         | `openstack security group`         | `python-neutronclient`  |
-| Networking     | VPNs                    | `openstack vpn`                    | `python-neutronclient`  |
-| Load Balancer  | Load Balancers          | `openstack loadbalancer`           | `python-octaviaclient`  |
-| Block Storage  | Volumes                 | `openstack volume`                 | `python-cinderclient`   |
-| Image          | Images                  | `openstack image`                  | `python-glanceclient`   |
-| Database       | Databases               | `openstack database`               | `python-troveclient`    |
-| Orchestration  | Stacks                  | `openstack stack`                  | `python-heatclient`     |
-| Kubernetes     | Clusters                | `openstack coe cluster`            | `python-magnumclient`   |
-| Kubernetes     | Node Groups             | `openstack coe nodegroup`          | `python-magnumclient`   |
-| Object Storage | Containers              | `openstack container`              | `python-swiftclient`    |
-| Object Storage | Objects                 | `openstack object`                 | `python-swiftclient`    |
-| Object Storage | Accounts                | `openstack object store account`   | `python-swiftclient`    |
-| Telemetry      | Metrics                 | `openstack metric`                 | `gnocchiclient`         |
-| Telemetry      | Alarms                  | `openstack alarm`                  | `aodhclient`            |
-| Billing        | Invoices                | `openstack rating invoice`         | `python-distilclient`   |
-| Billing        | Quotations              | `openstack rating quotation`       | `python-distilclient`   |
-| Billing        | Products                | `openstack rating product`         | `python-distilclient`   |
-| Administration | Project Users           | `openstack project user`           | `python-adjutantclient` |
-| Administration | Project Quotas          | `openstack project quota`          | `python-adjutantclient` |
-| Administration | Manageable Roles        | `openstack manageable roles`       | `python-adjutantclient` |
-| Administration | Passwords               | `openstack password`               | `python-adjutantclient` |
+| Service           | Resource Type           | Sub-command                        | API Client Library      |
+|-------------------|-------------------------|------------------------------------|-------------------------|
+| Identity          | Projects                | `openstack project`                | `python-keystoneclient` |
+| Identity          | Users                   | `openstack user`                   | `python-keystoneclient` |
+| Identity          | EC2 Credentials         | `openstack ec2 credentials`        | `python-keystoneclient` |
+| Identity          | Application Credentials | `openstack application credential` | `python-keystoneclient` |
+| Compute           | Instances / Servers     | `openstack server`                 | `python-novaclient`     |
+| Compute           | Keypairs                | `openstack keypair`                | `python-novaclient`     |
+| Networking        | Networks                | `openstack network`                | `python-neutronclient`  |
+| Networking        | Routers                 | `openstack router`                 | `python-neutronclient`  |
+| Networking        | Floating IPs            | `openstack floating ip`            | `python-neutronclient`  |
+| Networking        | Security Groups         | `openstack security group`         | `python-neutronclient`  |
+| Networking        | VPNs                    | `openstack vpn`                    | `python-neutronclient`  |
+| Load Balancer     | Load Balancers          | `openstack loadbalancer`           | `python-octaviaclient`  |
+| Block Storage     | Volumes                 | `openstack volume`                 | `python-cinderclient`   |
+| Image             | Images                  | `openstack image`                  | `python-glanceclient`   |
+| Database          | Databases               | `openstack database`               | `python-troveclient`    |
+| Orchestration     | Stacks                  | `openstack stack`                  | `python-heatclient`     |
+| Kubernetes        | Clusters                | `openstack coe cluster`            | `python-magnumclient`   |
+| Kubernetes        | Node Groups             | `openstack coe nodegroup`          | `python-magnumclient`   |
+| Object Storage    | Containers              | `openstack container`              | `python-swiftclient`    |
+| Object Storage    | Objects                 | `openstack object`                 | `python-swiftclient`    |
+| Object Storage    | Accounts                | `openstack object store account`   | `python-swiftclient`    |
+| Secret Management | Secrets                 | `openstack secret`                 | `python-barbicanclient` |
+| Telemetry         | Metrics                 | `openstack metric`                 | `gnocchiclient`         |
+| Telemetry         | Alarms                  | `openstack alarm`                  | `aodhclient`            |
+| Billing           | Invoices                | `openstack rating invoice`         | `python-distilclient`   |
+| Billing           | Quotations              | `openstack rating quotation`       | `python-distilclient`   |
+| Billing           | Products                | `openstack rating product`         | `python-distilclient`   |
+| Administration    | Project Users           | `openstack project user`           | `python-adjutantclient` |
+| Administration    | Project Quotas          | `openstack project quota`          | `python-adjutantclient` |
+| Administration    | Manageable Roles        | `openstack manageable roles`       | `python-adjutantclient` |
+| Administration    | Passwords               | `openstack password`               | `python-adjutantclient` |
 
 For more information on using these services, please refer to the
 [Catalyst Cloud documentation](https://docs.catalystcloud.nz).

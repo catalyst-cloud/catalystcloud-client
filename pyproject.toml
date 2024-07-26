@@ -12,6 +12,7 @@ readme = "README.md"
 keywords = [
     "adjutant",
     "aodh",
+    "barbican",
     "catalystcloud",
     "cinder",
     "distil",
@@ -56,6 +57,7 @@ dependencies = [
     "gnocchiclient",
     "openstacksdk<0.99",      # Required for Cinder API compatibility.
     "python-adjutantclient",
+    "python-barbicanclient",
     "python-cinderclient",
     "python-distilclient",
     "python-glanceclient",
