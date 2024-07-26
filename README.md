@@ -49,12 +49,18 @@ an alternative installation method which may be easier is to use [`pipx`](https:
 pipx install catalystcloud-client --include-deps
 ```
 
-This installs the [`catalystcloud-client`](https://pypi.org/project/catalystcloud-client)
-package into an isolated virtual environment, while also making the installed commands
-available for your local user.
+This makes the `openstack` command available to run in your user environment,
+while installing the [`catalystcloud-client`](https://pypi.org/project/catalystcloud-client)
+package into an isolated virtual environment to avoid conflicts.
 
 Note that the `--include-deps` option is required to expose the commands
 used to interact with Catalyst Cloud so they can be executed by your user.
+
+Once installed, run the following command to check that the installation was successful:
+
+```bash
+openstack --help
+```
 
 `pipx` also makes it easy to update the client and dependent packages
 using `pipx upgrade`.
