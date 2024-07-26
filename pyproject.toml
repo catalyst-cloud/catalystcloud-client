@@ -72,7 +72,7 @@ dependencies = [
     "python-troveclient",
 ]
 urls.Changelog = "https://github.com/catalyst-cloud/catalystcloud-client/blob/main/CHANGELOG.md"
-urls.Documentation = "https://docs.catalystcloud.nz"
+urls.Documentation = "https://github.com/catalyst-cloud/catalystcloud-client/blob/main/README.md"
 urls.Homepage = "https://catalystcloud.nz"
 urls.Issues = "https://github.com/catalyst-cloud/catalystcloud-client/issues"
 urls.Repository = "https://github.com/catalyst-cloud/catalystcloud-client"
