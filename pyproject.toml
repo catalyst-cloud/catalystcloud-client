@@ -1,0 +1,158 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools",
+    "setuptools-scm",
+]
+
+[project]
+name = "catalystcloud-client"
+description = "Python application for interacting with Catalyst Cloud APIs."
+readme = "README.md"
+keywords = [
+    "adjutant",
+    "aodh",
+    "barbican",
+    "catalystcloud",
+    "cinder",
+    "distil",
+    "glance",
+    "gnocchi",
+    "heat",
+    "magnum",
+    "neutron",
+    "nova",
+    "octavia",
+    "openstack",
+    "swift",
+    "trove",
+]
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "Callum Dickinson", email = "callum.dickinson@catalystcloud.nz" },
+]
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 5 - Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+    "Typing :: Typed",
+]
+dynamic = [
+    "version",
+]
+dependencies = [
+    "aodhclient",
+    "gnocchiclient",
+    "openstacksdk<0.99",      # Required for Cinder API compatibility.
+    "python-adjutantclient",
+    "python-barbicanclient",
+    "python-cinderclient",
+    "python-distilclient",
+    "python-glanceclient",
+    "python-heatclient",
+    "python-keystoneclient",
+    "python-magnumclient",
+    "python-neutronclient",
+    "python-novaclient",
+    "python-octaviaclient",
+    "python-openstackclient",
+    "python-swiftclient",
+    "python-troveclient",
+]
+urls.Changelog = "https://github.com/catalyst-cloud/catalystcloud-client/blob/main/CHANGELOG.md"
+urls.Documentation = "https://github.com/catalyst-cloud/catalystcloud-client/blob/main/README.md"
+urls.Homepage = "https://catalystcloud.nz"
+urls.Issues = "https://github.com/catalyst-cloud/catalystcloud-client/issues"
+urls.Repository = "https://github.com/catalyst-cloud/catalystcloud-client"
+
+[tool.pdm.dev-dependencies]
+lint = [
+    "mypy==1.11.0",
+    "ruff==0.5.4",
+]
+
+[tool.pdm.scripts]
+lint = { cmd = "ruff check" }
+format = { cmd = "ruff format" }
+
+[tool.setuptools_scm]
+
+[tool.ruff]
+line-length = 79
+indent-width = 4
+fix = true
+output-format = "grouped"
+format.indent-style = "space"
+format.quote-style = "double"
+format.line-ending = "auto"
+format.skip-magic-trailing-comma = false
+format.docstring-code-line-length = "dynamic"
+format.docstring-code-format = true
+lint.select = [
+    "A",
+    "B",
+    "BLE",
+    "E",
+    "F",
+    "G",
+    "I",
+    "INP",
+    "N",
+    "PLC",
+    "PLE",
+    "PLR",
+    "PLW",
+    "PTH",
+    "RUF",
+    "S",
+    "T10",
+    "T20",
+    "W",
+    "YTT",
+]
+lint.extend-select = [
+    # COM812 is currently disabled due to a conflict with the Ruff formatter.
+    # https://github.com/astral-sh/ruff/issues/9216
+    # TODO(callumdickinson): Decide whether to enable or remove.
+    # "COM812",
+    "COM818",
+    "UP009",
+]
+lint.extend-ignore = [
+    "A003",
+    "B023",
+    "N805",
+    "N806",
+    "PLR0911",
+    "PLR0912",
+    "PLR0913",
+    "PLR0915",
+    "RUF012",
+]
+lint.isort.combine-as-imports = true
+lint.isort.lines-between-types = 1
+lint.isort.required-imports = [
+    "from __future__ import annotations",
+]
+
+[tool.pyproject-fmt]
+column_width = 1
+indent = 4
+keep_full_version = true
+max_supported_version = "3.12"
+
+[tool.mypy]
+python_version = "3.8"
+pretty = true
