@@ -71,6 +71,7 @@ jobs:
         with:
           file: CHANGELOG.md
           pattern: ${{ github.ref_name }}
+          no-print-matched-heading: "true"
       - name: Publish the GitHub Release
         uses: softprops/action-gh-release@v2
         with:
