@@ -112,7 +112,6 @@ Using the `openstack` command, the following services can be managed:
 | Object Storage    | Objects                 | `openstack object`                 | `python-swiftclient`    |
 | Object Storage    | Accounts                | `openstack object store account`   | `python-swiftclient`    |
 | Secret Management | Secrets                 | `openstack secret`                 | `python-barbicanclient` |
-| Telemetry         | Metrics                 | `openstack metric`                 | `gnocchiclient`         |
 | Telemetry         | Alarms                  | `openstack alarm`                  | `aodhclient`            |
 | Billing           | Invoices                | `openstack rating invoice`         | `python-distilclient`   |
 | Billing           | Quotations              | `openstack rating quotation`       | `python-distilclient`   |
