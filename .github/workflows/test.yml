@@ -32,7 +32,7 @@ jobs:
         uses: pdm-project/setup-pdm@v4
         with:
           python-version: "3.12"
-          version: "2.17.1"
+          version: "2.18.1"
       - name: Build source dist and wheels
         run: pdm build --verbose
       - name: Upload source dist and wheels to artifacts

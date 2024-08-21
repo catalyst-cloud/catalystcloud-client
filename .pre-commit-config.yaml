@@ -32,6 +32,6 @@ repos:
     hooks:
       - id: pyproject-fmt
   - repo: https://github.com/pdm-project/pdm
-    rev: "2.17.1"
+    rev: "2.18.1"
     hooks:
       - id: pdm-lock-check
