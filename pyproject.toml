@@ -53,8 +53,8 @@ dynamic = [
 ]
 dependencies = [
     "aodhclient",
-    "gnocchiclient",
-    "openstacksdk<0.99",      # Required for Cinder API compatibility.
+    "gnocchiclient>=7.0.7",   # Oldest version that supports modern Gnocchi versions.
+    "openstacksdk<3.1.0",     # Newest version before app cred access rule support was introduced.
     "python-adjutantclient",
     "python-barbicanclient",
     "python-cinderclient",
