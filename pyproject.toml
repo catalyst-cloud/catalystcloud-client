@@ -27,7 +27,7 @@ keywords = [
     "swift",
     "trove",
 ]
-license = { text = "Apache-2.0" }
+license = "Apache-2.0"
 authors = [
     { name = "Callum Dickinson", email = "callum.dickinson@catalystcloud.nz" },
 ]
@@ -37,7 +37,6 @@ classifiers = [
     "Intended Audience :: Developers",
     "Intended Audience :: End Users/Desktop",
     "Intended Audience :: System Administrators",
-    "License :: OSI Approved :: Apache Software License",
     "Natural Language :: English",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3 :: Only",
@@ -46,6 +45,7 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Software Development :: Libraries",
 ]
 dynamic = [
@@ -76,15 +76,11 @@ urls.Homepage = "https://catalystcloud.nz"
 urls.Issues = "https://github.com/catalyst-cloud/catalystcloud-client/issues"
 urls.Repository = "https://github.com/catalyst-cloud/catalystcloud-client"
 
-[tool.pdm.dev-dependencies]
-lint = [
-    "mypy==1.11.0",
-    "ruff==0.5.4",
+[dependency-groups]
+dev = [
+    "mypy",
+    "ruff",
 ]
-
-[tool.pdm.scripts]
-lint = { cmd = "ruff check" }
-format = { cmd = "ruff format" }
 
 [tool.setuptools_scm]
 
