@@ -46,13 +46,14 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Topic :: Software Development :: Libraries",
 ]
 dynamic = [
     "version",
 ]
 dependencies = [
-    "aodhclient",
+    "aodhclient>=2.1.1",      # Oldest version that supports modern Aodh versions.
     "gnocchiclient>=7.0.7",   # Oldest version that supports modern Gnocchi versions.
     "openstacksdk<3.1.0",     # Newest version before app cred access rule support was introduced.
     "python-adjutantclient",
